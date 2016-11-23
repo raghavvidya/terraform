@@ -83,5 +83,19 @@ resource "aws_security_group" "dev_kubernetes" {
 	protocol = "icmp"
 	cidr_blocks = ["0.0.0.0/0"]
 	}
+
+####### SSH 
+        ingress {
+        from_port = 22
+        to_port = 22
+        protocol = "tcp"
+        cidr_blocks = ["0.0.0.0/0"]
+        }
+
+
+
+
+
+
 }
 
