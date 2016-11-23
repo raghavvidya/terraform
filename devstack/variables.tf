@@ -1,5 +1,6 @@
 variable control_cidr {
 	description = "CIDR for test inbound"
+	default = "0.0.0.0/0"
 	}
 
 variable vpc_name {
