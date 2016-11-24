@@ -29,7 +29,7 @@ variable vpc_cidr {
 
 variable default_keypair_public_key {
 	description = "Public Key of the default keypair"
-	default =""
+	#default =""
 	}
 
 

@@ -1,5 +1,5 @@
 resource "aws_instance" "etcd" {
-	count = 2
+	count = 3
 	ami = "${lookup(var.amis,var.region)}"
 	instance_type = "${var.etcd_instance_type}"
 	subnet_id = "${aws_subnet.kubernetes.id}"
